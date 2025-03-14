@@ -1,0 +1,66 @@
+/* Rules Page Container */
+.rules-container {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  /* Title Styling */
+  .game-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f8f9fa;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Rules List */
+  .rules-list {
+    text-align: left;
+    font-size: 1.2rem;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .rules-list li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .rules-list li:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Home Button */
+  .home-button {
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .home-button:hover {
+    background: #333;
+    color: #ffeb3b;
+    box-shadow: 0px 0px 12px rgba(255, 235, 59, 0.8);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .rules-list {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+  

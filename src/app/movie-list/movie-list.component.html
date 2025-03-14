@@ -1,0 +1,70 @@
+<div class="container mt-5 text-center">
+  <!-- Home Button -->
+  <button class="btn btn-dark home-button mb-3" (click)="goHome()">🏠 Home</button>
+
+  <h2 class="game-title">🎬 Guess the Movie</h2>
+  <p class="tries-left">
+    Tries left: <strong class="text-warning">{{ triesLeft }}</strong>
+  </p>
+
+  <!-- Movie Guess Box -->
+  <div class="guess-movie-box d-flex justify-content-center flex-wrap gap-3">
+    <span *ngFor="let char of movieCharacters; let i = index">
+      <div
+        class="char-box"
+        [ngClass]="{
+          'correct': userGuess[i] === char && char !== '_',
+          'incorrect': incorrectGuesses.includes(char),
+          'bg-danger': char === ' '
+        }"
+      >
+        <input
+          *ngIf="char !== ' '"
+          type="text"
+          maxlength="1"
+          [(ngModel)]="userGuess[i]"
+          class="letter-input"
+          disabled
+        />
+        <span *ngIf="char === ' '">/</span>
+      </div>
+    </span>
+  </div>
+
+  <!-- Query Box -->
+  <div class="query-box mt-5 d-flex justify-content-center">
+    <input
+      type="text"
+      class="letter-input form-control text-uppercase"
+      maxlength="1"
+      [(ngModel)]="queryLetter"
+      (keyup.enter)="checkLetter()"
+      (input)="queryLetter = queryLetter.toUpperCase()"
+      [disabled]="gameOver"
+      placeholder="Enter a Letter"
+      style="width: 250px;"
+    />
+  </div>
+  
+  <!-- Buttons -->
+  <div class="mt-3 d-flex gap-3 justify-content-center">
+    <button class="btn btn-primary" (click)="checkLetter()" [disabled]="gameOver || !queryLetter">
+      Check
+    </button>
+    <button class="btn btn-info" (click)="useHint()" [disabled]="hintUsed || gameOver">
+      Hint
+    </button>
+  </div>
+
+  <!-- Hint Section -->
+  <p *ngIf="hintUsed" class="hint-text mt-2">📅 Movie Year: <strong>{{ movieYear }}</strong></p>
+
+  <!-- Warning Message -->
+  <p *ngIf="warningMessage" class="warning-message mt-2">{{ warningMessage }}</p>
+
+  <!-- Game Over Message -->
+  <div *ngIf="gameOver" class="game-over-box mt-4">
+    <p class="game-message">{{ gameMessage }}</p>
+    <button class="btn btn-success" (click)="resetGame()">🔄 Play Again</button>
+  </div>
+</div>

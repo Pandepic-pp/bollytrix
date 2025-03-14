@@ -1,27 +1,122 @@
-# Bollytrix
+# Bollytrix - Guess the Movie
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
+Bollytrix is an interactive movie guessing game where players have to guess the missing letters of a Bollywood movie title within **9 tries**. Inspired by classic word games, this game adds a cinematic twist with a modern UI.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Engaging UI** – A sleek and modern design with a vibrant color theme.
+- **9 Tries Rule** – Players can only make **9 wrong guesses** before the game ends.
+- **Auto-Filled Vowels** – Vowels (A, E, I, O, U) are pre-filled to make guessing easier.
+- **Hints** – Players can use a hint to reveal the movie's release year.
+- **Word Separator** – A **"/"** separates multiple words in a movie name.
+- **Real-time Feedback** – Correct guesses turn **green**, incorrect ones turn **red**.
+- **Fully Responsive** – Works smoothly on both desktop and mobile screens.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## How to Play
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Start the game and try guessing one letter at a time.
+2. **Enter a consonant** in the input box (vowels are already filled).
+3. Click the **"Check"** button or press **Enter** to submit your guess.
+4. **Correct letters** appear in the movie title, while **wrong letters** reduce your tries.
+5. You have **9 tries** to guess the movie correctly.
+6. Click **"Hint"** to reveal the movie's **release year** (only once per game).
+7. If you guess all letters, **you win!** Otherwise, **game over!**
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Game Rules
 
-## Running end-to-end tests
+- **Vowels (A, E, I, O, U) are pre-filled.**
+- **Guess one letter at a time.**
+- **You have 9 tries.** Each incorrect guess reduces your attempts.
+- **Correct guesses appear in the title, incorrect ones are highlighted.**
+- **Use the "Hint" button once per game to reveal the movie year.**
+- **"/" separates words in multi-word movie titles.**
+- **Fill all letters before running out of tries to win!**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Installation & Setup
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone this repository:
+
+   ```sh
+   git clone https://github.com/your-username/bollytrix.git
+   ```
+   
+2. Navigate into the project directory:
+
+   ```sh
+   cd bollytrix
+   ```
+   
+3. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+4. Run the Angular development server:
+
+   ```sh
+   ng serve
+   ```
+
+5. Open your browser and go to:
+
+   ```sh
+   http://localhost:4200
+   ```
+
+## Technologies Used
+
+- Angular 15: Frontend framework
+- Bootstrap: UI design and responsiveness
+- TypeScript: Application login
+- CSS3: Styling and animations
+- HTML5: Structure and layout
+
+## Contributing
+
+Contributions are welcome! If you'd like to improve the project, follow these steps:
+
+1. Fork the repository.
+   
+2. Create a new branch:
+   
+   ```sh
+   git checkout -b feature-name
+   ```
+   
+3. Make your changes and commit them:
+   
+   ```sh
+   git commit -m "Add a new feature
+   ```
+   
+4. Push to the branch:
+
+   ```sh
+   git push origin feature-name
+   ```
+
+5. Open a Pull Request.
+
+## License
+This project is licensed under the MIT License.
+
+## Contact
+
+For any queries, suggestions, or contributions, feel free to reach out:
+
+- Github: Pandepic-pp
+- Email: pratyaksh22official@gmail.com
+   
+   
+   
+
+   

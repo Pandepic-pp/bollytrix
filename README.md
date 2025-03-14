@@ -4,6 +4,14 @@ Bollytrix is an interactive movie guessing game where players have to guess the 
 
 ---
 
+## Photos
+
+![home-page](https://github.com/user-attachments/assets/c0ecfcb2-0cc9-435f-a763-b453e59c1cef)
+![game-page](https://github.com/user-attachments/assets/25173b50-7d40-4055-ad9d-08b646202b5b)
+![rules-page](https://github.com/user-attachments/assets/031a1c99-f299-4d93-8935-e8a3999ccaa8)
+
+---
+
 ## Features
 
 - **Engaging UI** – A sleek and modern design with a vibrant color theme.
@@ -71,6 +79,7 @@ Bollytrix is an interactive movie guessing game where players have to guess the 
    ```sh
    http://localhost:4200
    ```
+---
 
 ## Technologies Used
 
@@ -79,6 +88,8 @@ Bollytrix is an interactive movie guessing game where players have to guess the 
 - TypeScript: Application login
 - CSS3: Styling and animations
 - HTML5: Structure and layout
+
+---
 
 ## Contributing
 
@@ -106,8 +117,12 @@ Contributions are welcome! If you'd like to improve the project, follow these st
 
 5. Open a Pull Request.
 
+---
+
 ## License
 This project is licensed under the MIT License.
+
+---
 
 ## Contact
 
